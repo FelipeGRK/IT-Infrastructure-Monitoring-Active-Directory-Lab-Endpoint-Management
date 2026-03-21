@@ -1,0 +1,2 @@
+# IT-Infrastructure-Monitoring-Active-Directory-Lab-Endpoint-Management
+Designed and implemented an enterprise-style lab demonstrating Windows Server, Active Directory, RBAC, endpoint management, and infrastructure monitoring to improve visibility into endpoint health, network performance, device management, and issues such as latency spikes, packet loss, network congestion, and limited visibility of connected systems.
