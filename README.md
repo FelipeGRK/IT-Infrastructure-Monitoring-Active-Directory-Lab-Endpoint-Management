@@ -27,9 +27,6 @@ This lab was built to strengthen practical skills in:
  
 <img width="2555" height="1279" alt="image" src="https://github.com/user-attachments/assets/c01b774d-cc31-45f9-96b7-5e0fb2d64198" />
 
-<img width="2511" height="1271" alt="image" src="https://github.com/user-attachments/assets/835f4330-5d45-4e25-b3d2-c97af1c6f923" />
-
-<img width="2560" height="1315" alt="image" src="https://github.com/user-attachments/assets/40324bfc-9aa0-4c1e-9f4c-1ca61a02cc75" />
 
 
 
@@ -57,7 +54,13 @@ The lab currently includes the following systems:
 - **MONITOR01** — Ubuntu Server virtual machine hosting the **Zabbix monitoring platform**
 - **Zabbix Server** — Centralized monitoring platform used for host visibility, service tracking, and alerting
 
-### High-Level Architecture
+## Active Directory Setup 
+<img width="2511" height="1271" alt="image" src="https://github.com/user-attachments/assets/835f4330-5d45-4e25-b3d2-c97af1c6f923" />
+
+<img width="2560" height="1315" alt="image" src="https://github.com/user-attachments/assets/40324bfc-9aa0-4c1e-9f4c-1ca61a02cc75" />
+
+
+### Architecture
 
 ```text
 +----------------------+
