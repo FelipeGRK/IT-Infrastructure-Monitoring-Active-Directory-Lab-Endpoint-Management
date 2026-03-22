@@ -1,0 +1,100 @@
+Active Directory & Server Configuration
+
+The Windows Server side of the lab was configured to provide centralized identity, authentication, and infrastructure management through AD DS and DNS.
+
+<img width="2511" height="1271" alt="Windows Server with Active Directory and DNS configuration" src="https://github.com/user-attachments/assets/835f4330-5d45-4e25-b3d2-c97af1c6f923" />
+
+Windows Server 2022 configured with Active Directory Domain Services (AD DS) and DNS for centralized identity and infrastructure management.
+
+Domain-Joined Endpoint Validation
+
+The Windows client endpoint was joined to the domain and validated for enterprise network connectivity and domain communication.
+
+<img width="2555" height="1279" alt="LABPC ipconfig and network validation" src="https://github.com/user-attachments/assets/c01b774d-cc31-45f9-96b7-5e0fb2d64198" />
+
+Domain-joined Windows endpoint (LABPC) with validated IP configuration and connectivity to the AD environment.
+
+Monitoring & Observability (Zabbix)
+
+To centralize infrastructure visibility, I deployed a Linux-based Zabbix Server and configured monitoring across Windows and Linux hosts. This allows the lab to track host availability, system performance, service health, and network-related metrics from one platform.
+
+<img width="2560" height="1315" alt="Zabbix dashboard showing host availability, alerts, and metrics" src="https://github.com/user-attachments/assets/40324bfc-9aa0-4c1e-9f4c-1ca61a02cc75" />
+
+Centralized Zabbix dashboard providing real-time visibility into host availability, system performance, alerts, and network-related metrics.
+
+Monitoring Server Validation
+
+The Ubuntu monitoring server hosts the Zabbix platform and supports centralized monitoring for both Windows and Linux systems in the lab.
+
+<img width="2511" height="1271" alt="Ubuntu monitoring server and Zabbix-related terminal output" src="https://github.com/user-attachments/assets/835f4330-5d45-4e25-b3d2-c97af1c6f923" />
+
+Ubuntu-based monitoring server (MONITOR01) running the Zabbix platform and supporting centralized infrastructure monitoring.
+
+Technologies Used
+Infrastructure
+Windows Server 2022
+Ubuntu Server
+VirtualBox
+Identity & Access Management
+Active Directory Domain Services (AD DS)
+DNS
+Organizational Units (OUs)
+Role-Based Access Control (RBAC)
+Monitoring & Observability
+Zabbix Server
+Zabbix Agent
+Zabbix Agent 2
+Dashboards
+Triggers / Alerts
+Discovery Rules
+Networking
+Host-only and NAT virtual networking
+Network reachability testing
+Network-focused monitoring
+Basic latency and connectivity monitoring
+Key Features Implemented
+Built a Windows Server 2022 domain environment with AD DS and DNS
+Joined Windows client systems to the Active Directory domain
+Configured OUs, RBAC, and domain-based administration workflows
+Deployed a Linux-based Zabbix Server
+Installed and configured Zabbix agents on Windows and Linux hosts
+Added centralized monitoring for:
+DC01
+LABPC
+MONITOR01
+Zabbix server
+Implemented the foundation for:
+alerts
+dashboards
+discovery
+asset visibility
+network-focused monitoring
+Current Monitoring Scope
+
+The environment currently supports centralized monitoring for:
+
+Host availability
+Service status
+System performance
+Agent connectivity
+Network-related metrics
+Endpoint visibility across Windows and Linux systems
+Why This Project Matters
+
+Many enterprise environments rely on centralized platforms to monitor infrastructure health, endpoint status, service availability, and network conditions. Without proper observability, administrators may struggle to quickly identify the cause of infrastructure issues or endpoint failures.
+
+This project demonstrates how a small enterprise-style lab can use:
+
+Active Directory
+DNS
+Domain-joined endpoints
+Zabbix-based monitoring
+
+to improve visibility, support troubleshooting, and lay the foundation for scalable infrastructure monitoring.
+
+Future Improvements
+Expand alerting for additional services and performance thresholds
+Build a more advanced dashboard for infrastructure visualization
+Improve network-focused monitoring for latency and packet loss analysis
+Refine discovery and automated onboarding of additional endpoints
+Extend monitoring coverage to more enterprise services and devices
